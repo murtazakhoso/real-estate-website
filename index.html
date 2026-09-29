@@ -6,124 +6,7 @@
 
   <title>PrimeNest Realty | Find Your Dream Home</title>
 
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      background: #ffffff;
-      color: #1a1a1a;
-    }
-
-    /* HEADER */
-    .header {
-      width: 100%;
-      background: #ffffff;
-      border-bottom: 1px solid #eeeeee;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
-
-    .header-container {
-      max-width: 1200px;
-      height: 82px;
-      margin: auto;
-      padding: 0 25px;
-
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-
-    /* LOGO */
-    .logo {
-      text-decoration: none;
-      color: #14213d;
-      font-size: 25px;
-      font-weight: 800;
-      letter-spacing: -0.5px;
-    }
-
-    .logo span {
-      color: #c59d5f;
-    }
-
-    /* NAVIGATION */
-    .nav {
-      display: flex;
-      align-items: center;
-      gap: 32px;
-    }
-
-    .nav a {
-      text-decoration: none;
-      color: #333333;
-      font-size: 15px;
-      font-weight: 600;
-      transition: 0.3s ease;
-    }
-
-    .nav a:hover {
-      color: #c59d5f;
-    }
-
-    /* CONTACT BUTTON */
-    .header-btn {
-      text-decoration: none;
-      background: #14213d;
-      color: #ffffff;
-      padding: 12px 20px;
-      border-radius: 6px;
-      font-size: 14px;
-      font-weight: 700;
-      transition: 0.3s ease;
-    }
-
-    .header-btn:hover {
-      background: #c59d5f;
-    }
-
-    /* MOBILE */
-    @media (max-width: 768px) {
-
-      .header-container {
-        height: 72px;
-      }
-
-      .nav {
-        gap: 16px;
-      }
-
-      .nav a {
-        font-size: 13px;
-      }
-
-      .header-btn {
-        display: none;
-      }
-
-      .logo {
-        font-size: 21px;
-      }
-    }
-
-    @media (max-width: 520px) {
-
-      .nav a:nth-child(3),
-      .nav a:nth-child(4) {
-        display: none;
-      }
-
-      .nav {
-        gap: 12px;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -150,38 +33,43 @@
 
     </div>
   </header>
-<!-- HERO SECTION -->
-<section class="hero">
 
-  <div class="hero-overlay"></div>
 
-  <div class="hero-container">
+  <!-- HERO SECTION -->
+  <section class="hero">
 
-    <div class="hero-content">
+    <div class="hero-overlay"></div>
 
-      <p class="hero-label">FIND YOUR DREAM HOME</p>
+    <div class="hero-container">
 
-      <h1>Find a Place You’ll Love to Call Home.</h1>
+      <div class="hero-content">
 
-      <p class="hero-text">
-        Discover beautiful homes and premium properties in locations
-        you’ll be proud to call home.
-      </p>
+        <p class="hero-label">FIND YOUR DREAM HOME</p>
 
-      <div class="hero-buttons">
-        <a href="#properties" class="hero-btn primary-btn">
-          Explore Properties
-        </a>
+        <h1>Find a Place You’ll Love to Call Home.</h1>
 
-        <a href="#contact" class="hero-btn secondary-btn">
-          Contact Us
-        </a>
+        <p class="hero-text">
+          Discover beautiful homes and premium properties in locations
+          you’ll be proud to call home.
+        </p>
+
+        <div class="hero-buttons">
+
+          <a href="#properties" class="hero-btn primary-btn">
+            Explore Properties
+          </a>
+
+          <a href="#contact" class="hero-btn secondary-btn">
+            Contact Us
+          </a>
+
+        </div>
+
       </div>
 
     </div>
 
-  </div>
+  </section>
 
-</section>
 </body>
 </html>
