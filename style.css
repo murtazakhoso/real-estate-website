@@ -1,1 +1,317 @@
+/* ================================
+   GLOBAL
+================================ */
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #ffffff;
+  color: #1a1a1a;
+}
+
+
+/* ================================
+   HEADER
+================================ */
+
+.header {
+  width: 100%;
+  background: #ffffff;
+  border-bottom: 1px solid #eeeeee;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header-container {
+  max-width: 1200px;
+  height: 82px;
+  margin: auto;
+  padding: 0 25px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+/* LOGO */
+
+.logo {
+  text-decoration: none;
+  color: #14213d;
+  font-size: 25px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+}
+
+.logo span {
+  color: #c59d5f;
+}
+
+
+/* NAVIGATION */
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #333333;
+  font-size: 15px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.nav a:hover {
+  color: #c59d5f;
+}
+
+
+/* HEADER BUTTON */
+
+.header-btn {
+  text-decoration: none;
+  background: #14213d;
+  color: #ffffff;
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 700;
+  transition: 0.3s ease;
+}
+
+.header-btn:hover {
+  background: #c59d5f;
+}
+
+
+/* ================================
+   HERO
+================================ */
+
+.hero {
+  position: relative;
+  min-height: 620px;
+
+  background-image: url("hero-real-estate.jpg");
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  align-items: center;
+
+  overflow: hidden;
+}
+
+
+/* HERO OVERLAY */
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+
+  background: linear-gradient(
+    90deg,
+    rgba(10, 20, 40, 0.88) 0%,
+    rgba(10, 20, 40, 0.65) 42%,
+    rgba(10, 20, 40, 0.15) 100%
+  );
+}
+
+
+/* HERO CONTAINER */
+
+.hero-container {
+  position: relative;
+  z-index: 2;
+
+  width: 100%;
+  max-width: 1200px;
+
+  margin: auto;
+  padding: 80px 25px;
+}
+
+
+/* HERO CONTENT */
+
+.hero-content {
+  max-width: 600px;
+  color: #ffffff;
+}
+
+.hero-label {
+  color: #c59d5f;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 18px;
+}
+
+.hero-content h1 {
+  font-size: 58px;
+  line-height: 1.08;
+  font-weight: 800;
+  margin-bottom: 22px;
+  letter-spacing: -1px;
+}
+
+.hero-text {
+  max-width: 520px;
+
+  font-size: 18px;
+  line-height: 1.7;
+
+  color: #eeeeee;
+
+  margin-bottom: 32px;
+}
+
+
+/* HERO BUTTONS */
+
+.hero-buttons {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.hero-btn {
+  display: inline-block;
+
+  text-decoration: none;
+
+  padding: 14px 24px;
+
+  border-radius: 6px;
+
+  font-size: 15px;
+  font-weight: 700;
+
+  transition: 0.3s ease;
+}
+
+
+/* PRIMARY BUTTON */
+
+.primary-btn {
+  background: #c59d5f;
+  color: #ffffff;
+}
+
+.primary-btn:hover {
+  background: #b38b50;
+}
+
+
+/* SECONDARY BUTTON */
+
+.secondary-btn {
+  border: 1px solid #ffffff;
+
+  color: #ffffff;
+
+  background: transparent;
+}
+
+.secondary-btn:hover {
+  background: #ffffff;
+  color: #14213d;
+}
+
+
+/* ================================
+   TABLET / MOBILE
+================================ */
+
+@media (max-width: 768px) {
+
+  .header-container {
+    height: 72px;
+  }
+
+  .nav {
+    gap: 16px;
+  }
+
+  .nav a {
+    font-size: 13px;
+  }
+
+  .header-btn {
+    display: none;
+  }
+
+  .logo {
+    font-size: 21px;
+  }
+
+
+  /* HERO */
+
+  .hero {
+    min-height: 560px;
+    background-position: 60% center;
+  }
+
+  .hero-container {
+    padding: 70px 25px;
+  }
+
+  .hero-content h1 {
+    font-size: 42px;
+  }
+
+  .hero-text {
+    font-size: 16px;
+  }
+}
+
+
+/* ================================
+   SMALL MOBILE
+================================ */
+
+@media (max-width: 520px) {
+
+  .nav a:nth-child(3),
+  .nav a:nth-child(4) {
+    display: none;
+  }
+
+  .nav {
+    gap: 12px;
+  }
+
+
+  .hero {
+    min-height: 540px;
+  }
+
+  .hero-content h1 {
+    font-size: 36px;
+  }
+
+  .hero-label {
+    font-size: 12px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hero-btn {
+    width: 100%;
+    text-align: center;
+  }
+}
