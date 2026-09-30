@@ -977,3 +977,144 @@ body {
   object-fit: contain;
   background: #f7f7f7;
 }
+/* ================================
+   SERVICES SECTION
+================================ */
+
+.services-section {
+  background: #f7f7f7;
+  padding: 85px 25px;
+}
+
+.services-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+
+/* SERVICES HEADING */
+
+.services-heading {
+  max-width: 700px;
+  margin: 0 auto 45px;
+  text-align: center;
+}
+
+.services-heading h2 {
+  color: #14213d;
+  font-size: 36px;
+  line-height: 1.2;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+
+.services-heading > p:last-child {
+  color: #666666;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+
+/* SERVICES GRID */
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+}
+
+
+/* SERVICE CARD */
+
+.service-card {
+  background: #ffffff;
+  padding: 32px 24px;
+
+  border: 1px solid #eeeeee;
+  border-radius: 8px;
+
+  transition: 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+}
+
+
+/* SERVICE ICON */
+
+.service-icon {
+  width: 55px;
+  height: 55px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 22px;
+
+  background: #14213d;
+  color: #c59d5f;
+
+  border-radius: 6px;
+
+  font-size: 23px;
+  font-weight: 700;
+}
+
+
+/* SERVICE CONTENT */
+
+.service-card h3 {
+  color: #14213d;
+  font-size: 19px;
+  margin-bottom: 12px;
+}
+
+.service-card p {
+  color: #777777;
+  font-size: 14px;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.service-card a {
+  color: #c59d5f;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 700;
+  transition: 0.3s ease;
+}
+
+.service-card a:hover {
+  color: #14213d;
+}
+
+
+/* SERVICES RESPONSIVE */
+
+@media (max-width: 900px) {
+
+  .services-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+}
+
+
+@media (max-width: 600px) {
+
+  .services-section {
+    padding: 65px 20px;
+  }
+
+  .services-heading h2 {
+    font-size: 29px;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
