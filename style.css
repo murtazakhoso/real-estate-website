@@ -811,3 +811,165 @@ body {
   }
 
 }
+/* ================================
+   ABOUT SECTION
+================================ */
+
+.about-section {
+  background: #ffffff;
+  padding: 90px 25px;
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 70px;
+
+  align-items: center;
+}
+
+
+/* ABOUT IMAGE */
+
+.about-image {
+  height: 500px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.about-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+
+/* ABOUT CONTENT */
+
+.about-content {
+  max-width: 560px;
+}
+
+.about-content h2 {
+  color: #14213d;
+  font-size: 40px;
+  line-height: 1.15;
+  font-weight: 800;
+  margin-bottom: 22px;
+}
+
+.about-content > p:not(.section-label) {
+  color: #666666;
+  font-size: 16px;
+  line-height: 1.75;
+  margin-bottom: 16px;
+}
+
+
+/* ABOUT POINTS */
+
+.about-points {
+  margin: 25px 0 30px;
+}
+
+.about-point {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.about-point span {
+  width: 25px;
+  height: 25px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #c59d5f;
+  color: #ffffff;
+
+  border-radius: 50%;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  flex-shrink: 0;
+}
+
+.about-point p {
+  color: #444444;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+
+/* ABOUT BUTTON */
+
+.about-btn {
+  display: inline-block;
+
+  padding: 14px 24px;
+
+  background: #14213d;
+  color: #ffffff;
+
+  text-decoration: none;
+
+  border-radius: 6px;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  transition: 0.3s ease;
+}
+
+.about-btn:hover {
+  background: #c59d5f;
+}
+
+
+/* ABOUT RESPONSIVE */
+
+@media (max-width: 900px) {
+
+  .about-container {
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+
+  .about-image {
+    height: 420px;
+  }
+
+  .about-content {
+    max-width: 100%;
+  }
+
+}
+
+
+@media (max-width: 600px) {
+
+  .about-section {
+    padding: 65px 20px;
+  }
+
+  .about-image {
+    height: 350px;
+  }
+
+  .about-content h2 {
+    font-size: 30px;
+  }
+
+  .about-content > p:not(.section-label) {
+    font-size: 15px;
+  }
+
+}
