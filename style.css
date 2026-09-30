@@ -973,3 +973,7 @@ body {
   }
 
 }
+.about-image img {
+  object-fit: contain;
+  background: #f7f7f7;
+}
