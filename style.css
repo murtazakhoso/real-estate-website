@@ -1378,3 +1378,124 @@ body {
   }
 
 }
+```css
+/* ================================
+   PROPERTIES PAGE HERO
+================================ */
+
+.page-hero {
+  position: relative;
+  min-height: 420px;
+
+  background-image: url("hero-real-estate.jpg");
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  align-items: center;
+
+  overflow: hidden;
+}
+
+.page-hero-overlay {
+  position: absolute;
+  inset: 0;
+
+  background: linear-gradient(
+    90deg,
+    rgba(10, 20, 40, 0.88) 0%,
+    rgba(10, 20, 40, 0.60) 55%,
+    rgba(10, 20, 40, 0.25) 100%
+  );
+}
+
+.page-hero-container {
+  position: relative;
+  z-index: 2;
+
+  width: 100%;
+  max-width: 1200px;
+
+  margin: auto;
+  padding: 80px 25px;
+}
+
+.page-hero-content {
+  max-width: 650px;
+  color: #ffffff;
+}
+
+.page-hero-label {
+  color: #c59d5f;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  letter-spacing: 2px;
+
+  margin-bottom: 14px;
+}
+
+.page-hero-content h1 {
+  font-size: 52px;
+  line-height: 1.1;
+
+  font-weight: 800;
+
+  margin-bottom: 18px;
+
+  letter-spacing: -1px;
+}
+
+.page-hero-content p:last-child {
+  max-width: 560px;
+
+  color: #eeeeee;
+
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+
+/* ================================
+   PROPERTIES HERO MOBILE
+================================ */
+
+@media (max-width: 768px) {
+
+  .page-hero {
+    min-height: 360px;
+  }
+
+  .page-hero-container {
+    padding: 70px 25px;
+  }
+
+  .page-hero-content h1 {
+    font-size: 42px;
+  }
+
+}
+
+
+@media (max-width: 520px) {
+
+  .page-hero {
+    min-height: 330px;
+  }
+
+  .page-hero-container {
+    padding: 60px 20px;
+  }
+
+  .page-hero-content h1 {
+    font-size: 34px;
+  }
+
+  .page-hero-content p:last-child {
+    font-size: 15px;
+  }
+
+}
+```
+
