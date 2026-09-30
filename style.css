@@ -1498,4 +1498,158 @@ body {
 
 }
 ```
+```css
+/* ================================
+   PROPERTY FILTER
+================================ */
+
+.property-filter {
+  background: #f7f7f7;
+  padding: 70px 25px;
+}
+
+.filter-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+
+/* FILTER HEADING */
+
+.filter-heading {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 35px;
+}
+
+.filter-heading h2 {
+  color: #14213d;
+  font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+
+.filter-heading > p:last-child {
+  color: #666666;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+
+/* FILTER FORM */
+
+.property-filter-form {
+  background: #ffffff;
+
+  padding: 25px;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr) auto;
+
+  gap: 16px;
+
+  border-radius: 8px;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+
+/* FILTER FIELD */
+
+.filter-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.filter-field label {
+  color: #14213d;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.filter-field select {
+  width: 100%;
+
+  padding: 13px 14px;
+
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+
+  background: #ffffff;
+
+  color: #555555;
+
+  font-size: 14px;
+
+  outline: none;
+}
+
+.filter-field select:focus {
+  border-color: #c59d5f;
+}
+
+
+/* FILTER BUTTON */
+
+.filter-btn {
+  align-self: end;
+
+  border: none;
+  border-radius: 5px;
+
+  padding: 14px 22px;
+
+  background: #14213d;
+  color: #ffffff;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  white-space: nowrap;
+
+  transition: 0.3s ease;
+}
+
+.filter-btn:hover {
+  background: #c59d5f;
+}
+
+
+/* ================================
+   FILTER RESPONSIVE
+================================ */
+
+@media (max-width: 1000px) {
+
+  .property-filter-form {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .filter-btn {
+    width: 100%;
+  }
+
+}
+
+
+@media (max-width: 520px) {
+
+  .property-filter {
+    padding: 55px 20px;
+  }
+
+  .filter-heading h2 {
+    font-size: 29px;
+  }
+
+  .property-filter-form {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+
+}
+```
 
